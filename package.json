@@ -1,0 +1,29 @@
+{
+  "name": "travel-log-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amitesh100/travel-log-app.git"
+  },
+  "author": "Amitesh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Amitesh100/travel-log-app/issues"
+  },
+  "homepage": "https://github.com/Amitesh100/travel-log-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "nodemon": "^3.0.1"
+  }
+}
