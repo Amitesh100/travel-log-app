@@ -7,8 +7,7 @@
 * Comments - Text
 * Rating - scale of 1 - 10
 * Image - Text - URL
-* Start Date - DateTime
-* End Date - DateTime
+* Visit Date - DateTime
 * Latitude - Number
 * Longitude - Number
 * Created At - DateTime
