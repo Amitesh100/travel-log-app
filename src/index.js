@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const helmet = require('helmet');
 const cors = require('cors');
 const { notFound, errorHandler } = require('./middlewares');
+const logsRouter = require('./api/logs');
 require('dotenv').config();
 
 const app = express();
@@ -23,12 +24,8 @@ app.use(helmet());
 app.use(cors({
   origin: process.env.CORS_ORIGIN,
 }));
+app.use(express.json());
 
+app.use('/api/logs', logsRouter);
 app.use(notFound);
 app.use(errorHandler);
-
-app.get('/', (req, res) => {
-  res.json({
-    message: 'You\'re at the homepage now',
-  });
-});
